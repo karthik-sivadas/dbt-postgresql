@@ -11,7 +11,7 @@ WITH base AS (
         last_login,
         is_active,
         score
-    FROM test_model
+    FROM {{ source('postgres', 'test_model') }}
 )
 
 SELECT
