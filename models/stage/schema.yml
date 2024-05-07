@@ -2,16 +2,16 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
+    - name: example_model
       description: "A starter dbt model"
       columns:
-          - name: id
+          - name: total_users
             description: "The primary key for this table"
             tests:
                 - unique
                 - not_null
 
-    - name: my_second_dbt_model
+    - name: filtered_users
       description: "A starter dbt model"
       columns:
           - name: id
