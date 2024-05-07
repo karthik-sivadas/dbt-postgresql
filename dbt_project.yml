@@ -40,3 +40,8 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    filtered_users:
+      +vars:
+        "is_active_filter": true
+        "start_date": "2021-01-01"
+        "end_date": "2021-12-31"
